@@ -1,0 +1,66 @@
+\documentclass[a4paper,12pt,twoside]{book}
+\usepackage{graphicx}
+\usepackage{natbib}
+\graphicspath{ {figures/} }
+\usepackage{array}
+\usepackage{lipsum}
+\usepackage{float}
+\usepackage{siunitx}
+\usepackage{ xcolor}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[left=2.5cm,right=2.5cm,top=3cm,bottom=3cm]{geometry}
+\tolerance=1
+\emergencystretch=\maxdimen
+\hyphenpenalty=10000
+\hbadness=10000
+\usepackage[belowskip=-10pt,aboveskip=10 pt]{caption}
+\usepackage{setspace}
+\def\bibfont{\footnotesize}
+\doublespacing
+\setlength{\intextsep}{20pt plus 2pt minus 2pt}
+\setlength{\belowcaptionskip}{-15pt}
+
+\usepackage{natbib}
+\raggedbottom
+
+\usepackage[french]{babel}
+%\usepackage{lastpage}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{2pt}
+\renewcommand{\footrulewidth}{1pt}
+
+\fancyhf{}
+\renewcommand{\chaptermark}[1]{\markboth{\bsc{\chaptername~\thechapter{} :} #1}{}}
+\renewcommand{\sectionmark}[1]{\markright{\thesection{} \ #1}}
+\renewcommand{\headrulewidth}{0pt}
+\lhead[\textsl{\leftmark}]{\textsl{\rightmark}}
+\rhead[\textsl{\rightmark}]{\textsl{\leftmark}}
+\cfoot[\thepage]{\thepage}
+\setlength{\headheight}{15pt}
+
+\DeclareDocumentCommand{\corr}{m}{{\color{red}#1}}
+\DeclareDocumentCommand{\corrg}{m}{{\color{teal}#1}}
+\renewcommand{\headrulewidth}{2pt}
+\renewcommand{\footrulewidth}{1pt}
+\begin{document}
+	
+	%	\frontmatter
+	%	\input{Chaps/Dedicace.tex}
+	%\input{Chaps/Dedicace1.tex}
+	%	\input{Chaps/Remer.tex}
+		%\	tableofcontents
+		%\listoffigures
+	%	\listoftables
+	%	\mainmatter
+		%\markboth{INTRODUCTION}{}
+	%	\input{Chaps/Intro.tex}
+	%	\input{Chaps/Chap1.tex}
+		%\input{Chaps/Chap2.tex}
+		%\input{Chaps/Chap3.tex}
+	%	\input{Chaps/Conc-gene.tex}
+		%\bibliographystyle{unsrt}
+		%\raggedright
+		%\bibliography{Bib/references.bib}
+\end{document}
