@@ -1,7 +1,6 @@
-\chapter{Analyse et spécification des besoins }
-\newpage
 
-
+	\chapter{Analyse et spécification des besoins }
+	\newpage
 \section*{Introduction }
 
 Ce chapitre se concentre sur l'analyse et la spécification des besoins, en distinguant entre les besoins fonctionnels et non fonctionnels. Nous procéderons ensuite à une étude comparative des solutions SD-WAN pour choisir la plus adaptée.
@@ -31,18 +30,18 @@ Grâce à cette approche centralisée, les administrateurs peuvent effectuer des
 
 La sécurité avancée dans SD-WAN implique l'intégration de plusieurs fonctionnalités de sécurité pour protéger le trafic réseau contre les menaces potentielles. Cela inclut le chiffrement des données qui est un élément  essentiel pour garantir la confidentialité des informations transitant à travers le réseau SD-WAN. Les pare-feu intégrés filtrent et contrôlent le trafic en fonction de règles prédéfinies, bloquant les communications non autorisées et détectant les tentatives d'intrusion.
 
- De plus, les IDS/IPS assurent la détection des menaces en utilisant des technologies avancées telles que l'apprentissage automatique et l'analyse comportementale pour identifier les activités malveillantes ou suspectes sur le réseau, y compris la détection des logiciels malveillants et des attaques par déni de service distribué (DDoS).
- 
-  Enfin, l'intégration d'un SIG, qui est une passerelle Internet sécurisée, permet de centraliser et de consolider les fonctions de sécurité au niveau de la connectivité Internet. Cela permet de filtrer le trafic Internet avant qu'il n'atteigne les sites distants, réduisant ainsi la surface d'attaque et améliorant la sécurité globale du réseau. 
+De plus, les IDS/IPS assurent la détection des menaces en utilisant des technologies avancées telles que l'apprentissage automatique et l'analyse comportementale pour identifier les activités malveillantes ou suspectes sur le réseau, y compris la détection des logiciels malveillants et des attaques par déni de service distribué (DDoS).
+
+Enfin, l'intégration d'un SIG, qui est une passerelle Internet sécurisée, permet de centraliser et de consolider les fonctions de sécurité au niveau de la connectivité Internet. Cela permet de filtrer le trafic Internet avant qu'il n'atteigne les sites distants, réduisant ainsi la surface d'attaque et améliorant la sécurité globale du réseau. 
 \subsubsection{La segmentation }
 
 La segmentation réseau divise un réseau en plusieurs segments ou sous-réseaux,comme montre la figure . Elle permet d'améliorer la surveillance et le contrôle du réseau grâce à des politiques. Elle offre aussi la possibilité d'améliorer les aspects de sécurité , en empêchant l'accès simultané à l'ensemble des ressources. Par conséquent, en cas d'intrusion, seule la partie des ressources exposée à l'attaque sera compromise, alors que le reste des ressources restera sécurisé.
 \begin{figure} [H]
-
+	
 	\begin{center}
 		\centering
 		\hspace*{-0.5cm}
-
+		
 	\end{center}
 	\caption{La ségmentation dans SD-WAN }
 \end{figure} 
@@ -74,7 +73,7 @@ Fiabilité : Assurer une disponibilité élevée du réseau et des applications,
 
 Le SD-WAN offre une rentabilité accrue en minimisant les dépenses liées à l'exploitation et à la maintenance, tout en améliorant l'efficacité opérationnelle.
 
- Contrairement aux technologies traditionnelles qui exigent souvent des déplacements sur site pour l'installation de nouvelles configurations et mises à jour, le SD-WAN permet des déploiements à distance, réduisant ainsi les coûts associés à la main-d'œuvre et aux déplacements.
+Contrairement aux technologies traditionnelles qui exigent souvent des déplacements sur site pour l'installation de nouvelles configurations et mises à jour, le SD-WAN permet des déploiements à distance, réduisant ainsi les coûts associés à la main-d'œuvre et aux déplacements.
 
 \subsubsection{Interopérabilité  }
 
@@ -84,60 +83,60 @@ Le SD-WAN est compatible avec les infrastructures et les systèmes existants de 
 \subsection{Étude comparative  }
 %\begin{tabular}{|p{2.5cm}|p{2.5cm}|p{2.5cm}|p{2.5cm}|p{2.5cm}|}
 \begin{table}[H]
-\begin{center}
-	\caption{Tableau comparatif  }
-	
-	\hspace*{-0.5 cm}	\begin{tabular}{|p{3cm}|p{3cm}|p{3cm}|p{3cm}|p{3cm}|}
-		\hline
-		\centering
-	 & Cisco & Fortinet & Silver Peak & Versa\\
-		\hline
-		\centering
+	\begin{center}
+		\caption{Tableau comparatif  }
 		
-	La plateforme prend en charge à la fois le routage classique et le SD-WAN. & -Services de routage classiques complets.
-	- Migration fluide et intégration harmonieuse des fonctionnalités SD-WAN avec le routage classique sur une même plateforme.
-	& -Le déploiement d'un SD-WAN n'implique ni l'ajout de composants supplémentaires ni la nécessité de modifier votre infrastructure existante. & -Migration sans protection des investissements.
-	
-	-fonctionnalités classiques de routage restreintes sur la même plateforme SD-WAN.
-	& - L'utilisation d'un SD-WAN nécessite l'ajout de matériel. \\
-		
-		\hline
-		
-		
-		\centering
-	Architecture SD-WAN personnalisée& - Les composants dédiés à l'évolutivité et aux performances, répartis entre les plans de contrôle, de données et de gestion, fournissent une architecture compatible avec SDN.
-	-Flexibilité pour ajuster l'architecture à l'objectif de l'entreprise.
-	- le déploiement dans le cloud est pris en charge et géré par l'équipe Cisco Cloud Ops.
-	&- Ancienne infrastructure reposant sur un pare-feu.&- Ancienne infrastructure combinant les plans de contrôle et de données.&- Des composants spécialisés pour le contrôle, les données et la gestion.
-		\\
-		\hline
-		\end{tabular}
-\end{center}
-\end{table}	
-		\begin{table}[H]
-			\begin{center}
+		\hspace*{-0.5 cm}	\begin{tabular}{|p{3cm}|p{3cm}|p{3cm}|p{3cm}|p{3cm}|}
+			\hline
+			\centering
+			& Cisco & Fortinet & Silver Peak & Versa\\
+			\hline
+			\centering
 			
-	\hspace*{-0.5 cm}	\begin{tabular}{|p{3cm}|p{3cm}|p{3cm}|p{3cm}|p{3cm}|}
-	\hline
-	\centering
-		\centering
-		Modèle de politique évolutif & -La sélection dynamique des chemins permet aux applications critiques d'éviter automatiquement les problèmes de réseau.
-		- la microsegmentation et la gestion des politiques basée sur l'identité facilitent l'application cohérente de politiques multisites pour assurer une expérience utilisateur uniforme.& - La gestion séparée des politiques pour le SD-WAN et le pare-feu complique l'ingénierie du trafic et la transmission de politiques centralisées pour les plans de contrôle et de données.& -Bien que les politiques puissent être créées et réutilisées pour répondre aux besoins de l'entreprise, la microsegmentation et l'application de politiques multidomaines sont restreintes.& Bien qu'il soit possible d'effectuer l'ingénierie du trafic en fonction de politiques sensibles aux applications, l'application de politiques multidomaines est restreinte.
-		 \\
-		\hline
-		
-		
-		\centering
-	AAAAAAA &BBBBBBB\\
-		\hline
-		\centering
-		
-		5) Nez en l’air &   6) Sur le dos \\
-		\hline
-	\end{tabular}
-\end{center}
+			La plateforme prend en charge à la fois le routage classique et le SD-WAN. & -Services de routage classiques complets.
+			- Migration fluide et intégration harmonieuse des fonctionnalités SD-WAN avec le routage classique sur une même plateforme.
+			& -Le déploiement d'un SD-WAN n'implique ni l'ajout de composants supplémentaires ni la nécessité de modifier votre infrastructure existante. & -Migration sans protection des investissements.
+			
+			-fonctionnalités classiques de routage restreintes sur la même plateforme SD-WAN.
+			& - L'utilisation d'un SD-WAN nécessite l'ajout de matériel. \\
+			
+			\hline
+			
+			
+			\centering
+			Architecture SD-WAN personnalisée& - Les composants dédiés à l'évolutivité et aux performances, répartis entre les plans de contrôle, de données et de gestion, fournissent une architecture compatible avec SDN.
+			-Flexibilité pour ajuster l'architecture à l'objectif de l'entreprise.
+			- le déploiement dans le cloud est pris en charge et géré par l'équipe Cisco Cloud Ops.
+			&- Ancienne infrastructure reposant sur un pare-feu.&- Ancienne infrastructure combinant les plans de contrôle et de données.&- Des composants spécialisés pour le contrôle, les données et la gestion.
+			\\
+			\hline
+		\end{tabular}
+	\end{center}
 \end{table}	
- 
+\begin{table}[H]
+	\begin{center}
+		
+		\hspace*{-0.5 cm}	\begin{tabular}{|p{3cm}|p{3cm}|p{3cm}|p{3cm}|p{3cm}|}
+			\hline
+			\centering
+			\centering
+			Modèle de politique évolutif & -La sélection dynamique des chemins permet aux applications critiques d'éviter automatiquement les problèmes de réseau.
+			- la microsegmentation et la gestion des politiques basée sur l'identité facilitent l'application cohérente de politiques multisites pour assurer une expérience utilisateur uniforme.& - La gestion séparée des politiques pour le SD-WAN et le pare-feu complique l'ingénierie du trafic et la transmission de politiques centralisées pour les plans de contrôle et de données.& -Bien que les politiques puissent être créées et réutilisées pour répondre aux besoins de l'entreprise, la microsegmentation et l'application de politiques multidomaines sont restreintes.& Bien qu'il soit possible d'effectuer l'ingénierie du trafic en fonction de politiques sensibles aux applications, l'application de politiques multidomaines est restreinte.
+			\\
+			\hline
+			
+			
+			\centering
+			AAAAAAA &BBBBBBB\\
+			\hline
+			\centering
+			
+			5) Nez en l’air &   6) Sur le dos \\
+			\hline
+		\end{tabular}
+	\end{center}
+\end{table}	
+
 
 \subsection{Choix de la solution SD-WAN  }
 Le choix de la solution dépend de quatre éléments essentiels ,l'infrastructure réseau, la sécurité réseau, l'intégration cloud et la périphérie du réseau.
@@ -175,24 +174,6 @@ En outre , Cisco offre  une intégration VoIP native grâce à ses plateformes C
 \section*{Conclusion }
 
 Dans ce chapitre, nous avons examiné en détail les besoins de notre infrastructure réseau, en mettant en évidence les critères fonctionnels et non fonctionnels essentiels. Après avoir comparé les différentes solutions SD-WAN disponibles, nous avons choisi la solution optimale. Dans le chapitre suivant, nous allons analyser et concevoir la solution SD-WAN pour répondre à nos besoins spécifiques.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
